@@ -196,7 +196,7 @@ Most project repositories are already setup so that you can run `mvn clean verif
 - If you just want to **build one specific module**, this is usually possible without special consideration just keep in mind that if the tests are seperated from the module you have changed you need to build both of them or the whole reactor,
 for example you can run the tests and the bundle under test with the command `mvn clean verify -pl :<name of the bundle under test>,:<name of the test bundle>`, one specific test can be run by adding `-Dtest=<full qualified class name of test>`
 - You can perform a **quick run** to check everything compiles with `-DskipTests` in comibination with `-T1C` this can really speed up things, just keep in mind that the tests are not executed.
-- If you want to **make sure you didn't broke the API** you can specify `-Papi-check'
+- If you want to **make sure you didn't break the API** you can specify `-Papi-check'
 - If you want to **check the javadoc** (JDT currently [not find all issues](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1858) in the IDE) you can specify `-Pjavadoc` additionally `-DfailOnJavadocErrors=true` will even fail the build, you can even [try to fix them](https://maven.apache.org/plugins/maven-javadoc-plugin/fix-mojo.html) automatically by adding 'javadoc:fix' to your command
 
 
