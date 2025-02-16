@@ -60,6 +60,8 @@ You can set up a pre-configured IDE for development of the Eclipse SDK using the
 
 [![Create Eclipse Development Environment for the Eclipse SDK](https://download.eclipse.org/oomph/www/setups/svg/Platform_SDK.svg)](https://www.eclipse.org/setups/installer/?url=https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/oomph/PlatformSDKConfiguration.setup&show=true "Click to open Eclipse-Installer Auto Launch or drag onto your running installer's title area")
 
+See the [Setup Extension](#setup-extension) section for how to extend the installed IDE or the target platform with additional dependencies.
+
 ## Recommended Workflow
 
 The recommended way for contributions is to create a fork of the main project repository and to create changes only in that fork
@@ -199,6 +201,7 @@ for example you can run the tests and the bundle under test with the command `mv
 - If you want to **make sure you didn't break the API** you can specify `-Papi-check'
 - If you want to **check the javadoc** (JDT currently [not find all issues](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1858) in the IDE) you can specify `-Pjavadoc` additionally `-DfailOnJavadocErrors=true` will even fail the build, you can even [try to fix them](https://maven.apache.org/plugins/maven-javadoc-plugin/fix-mojo.html) automatically by adding 'javadoc:fix' to your command
 
+#### Setup Extension
 
 ## Contact
 
